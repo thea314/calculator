@@ -140,21 +140,38 @@ let addition = document.getElementById('addition');
 
 addition.addEventListener('click', () => {
 
-    equationTrimmed = equationValue.trimStart();
+    equationTrimmed = equationValue.trim();
+    let equationArray = equationTrimmed.split(' ');
 
     if(equationTrimmed.indexOf('+') !== -1) {
-        let equationArray = equationTrimmed.split(' ');
+              
         displayEquation.textContent = operate(Number(equationArray[0]), Number(equationArray[2]), '+');
+        equationValue = '';
         equationValue = operate(Number(equationArray[0]), Number(equationArray[2]), '+');
+        displayEquation.textContent = equationValue += " + ";
+
+
     } else if (equationTrimmed.indexOf('-') !== -1) {
-        let equationArray = equationTrimmed.split(' ');
-        displayEquation.textContent = operate(Number(equationArray[0]), Number(equationArray[2]), '+') + " - ";
+        
+        displayEquation.textContent = operate(Number(equationArray[0]), Number(equationArray[2]), '-');
+        equationValue = '';
+        equationValue = operate(Number(equationArray[0]), Number(equationArray[2]), '-');
+        displayEquation.textContent = equationValue += " + ";
+
     } else if (equationTrimmed.indexOf('*') !== -1) {
-        let equationArray = equationTrimmed.split(' ');
-        displayEquation.textContent = operate(Number(equationArray[0]), Number(equationArray[2]), '+') + " * ";
+        
+        displayEquation.textContent = operate(Number(equationArray[0]), Number(equationArray[2]), '*');
+        equationValue = '';
+        equationValue = operate(Number(equationArray[0]), Number(equationArray[2]), '*');
+        displayEquation.textContent = equationValue += " + ";
+
     } else if (equationTrimmed.indexOf('/') !== -1) {
-        let equationArray = equationTrimmed.split(' ');
-        displayEquation.textContent = operate(Number(equationArray[0]), Number(equationArray[2]), '+') + " / ";
+        
+        displayEquation.textContent = operate(Number(equationArray[0]), Number(equationArray[2]), '/');
+        equationValue = '';
+        equationValue = operate(Number(equationArray[0]), Number(equationArray[2]), '/');
+        displayEquation.textContent = equationValue += " + ";
+
     } else {
         equationValue = equationValue += ' + ';
         displayEquation.textContent = equationValue;
@@ -164,8 +181,42 @@ addition.addEventListener('click', () => {
 let minus = document.getElementById('minus');
 
 minus.addEventListener('click', () => {
-    equationValue = equationValue += ' - ';
-    displayEquation.textContent = equationValue;
+    equationTrimmed = equationValue.trim();
+    let equationArray = equationTrimmed.split(' ');
+
+    if(equationTrimmed.indexOf('+') !== -1) {
+              
+        displayEquation.textContent = operate(Number(equationArray[0]), Number(equationArray[2]), '+');
+        equationValue = '';
+        equationValue = operate(Number(equationArray[0]), Number(equationArray[2]), '+');
+        displayEquation.textContent = equationValue += " - ";
+
+
+    } else if (equationTrimmed.indexOf('-') !== -1) {
+        
+        displayEquation.textContent = operate(Number(equationArray[0]), Number(equationArray[2]), '-');
+        equationValue = '';
+        equationValue = operate(Number(equationArray[0]), Number(equationArray[2]), '-');
+        displayEquation.textContent = equationValue += " - ";
+
+    } else if (equationTrimmed.indexOf('*') !== -1) {
+        
+        displayEquation.textContent = operate(Number(equationArray[0]), Number(equationArray[2]), '*');
+        equationValue = '';
+        equationValue = operate(Number(equationArray[0]), Number(equationArray[2]), '*');
+        displayEquation.textContent = equationValue += " - ";
+
+    } else if (equationTrimmed.indexOf('/') !== -1) {
+        
+        displayEquation.textContent = operate(Number(equationArray[0]), Number(equationArray[2]), '/');
+        equationValue = '';
+        equationValue = operate(Number(equationArray[0]), Number(equationArray[2]), '/');
+        displayEquation.textContent = equationValue += " - ";
+
+    } else {
+        equationValue = equationValue += ' - ';
+        displayEquation.textContent = equationValue;
+    }
 
 
 })
@@ -173,8 +224,42 @@ minus.addEventListener('click', () => {
 let multiplication = document.getElementById('multiplication');
 
 multiplication.addEventListener('click', () => {
-    equationValue = equationValue += ' * ';
-    displayEquation.textContent = equationValue;
+    equationTrimmed = equationValue.trim();
+    let equationArray = equationTrimmed.split(' ');
+
+    if(equationTrimmed.indexOf('+') !== -1) {
+              
+        displayEquation.textContent = operate(Number(equationArray[0]), Number(equationArray[2]), '+');
+        equationValue = '';
+        equationValue = operate(Number(equationArray[0]), Number(equationArray[2]), '+');
+        displayEquation.textContent = equationValue += " * ";
+
+
+    } else if (equationTrimmed.indexOf('-') !== -1) {
+        
+        displayEquation.textContent = operate(Number(equationArray[0]), Number(equationArray[2]), '-');
+        equationValue = '';
+        equationValue = operate(Number(equationArray[0]), Number(equationArray[2]), '-');
+        displayEquation.textContent = equationValue += " * ";
+
+    } else if (equationTrimmed.indexOf('*') !== -1) {
+        
+        displayEquation.textContent = operate(Number(equationArray[0]), Number(equationArray[2]), '*');
+        equationValue = '';
+        equationValue = operate(Number(equationArray[0]), Number(equationArray[2]), '*');
+        displayEquation.textContent = equationValue += " * ";
+
+    } else if (equationTrimmed.indexOf('/') !== -1) {
+        
+        displayEquation.textContent = operate(Number(equationArray[0]), Number(equationArray[2]), '/');
+        equationValue = '';
+        equationValue = operate(Number(equationArray[0]), Number(equationArray[2]), '/');
+        displayEquation.textContent = equationValue += " * ";
+
+    } else {
+        equationValue = equationValue += ' * ';
+        displayEquation.textContent = equationValue;
+    }
 
 
 })
@@ -182,8 +267,42 @@ multiplication.addEventListener('click', () => {
 let division = document.getElementById('division');
 
 division.addEventListener('click', () => {
-    equationValue = equationValue += ' / ';
-    displayEquation.textContent = equationValue;
+    equationTrimmed = equationValue.trim();
+    let equationArray = equationTrimmed.split(' ');
+
+    if(equationTrimmed.indexOf('+') !== -1) {
+              
+        displayEquation.textContent = operate(Number(equationArray[0]), Number(equationArray[2]), '+');
+        equationValue = '';
+        equationValue = operate(Number(equationArray[0]), Number(equationArray[2]), '+');
+        displayEquation.textContent = equationValue += " / ";
+
+
+    } else if (equationTrimmed.indexOf('-') !== -1) {
+        
+        displayEquation.textContent = operate(Number(equationArray[0]), Number(equationArray[2]), '-');
+        equationValue = '';
+        equationValue = operate(Number(equationArray[0]), Number(equationArray[2]), '-');
+        displayEquation.textContent = equationValue += " / ";
+
+    } else if (equationTrimmed.indexOf('*') !== -1) {
+        
+        displayEquation.textContent = operate(Number(equationArray[0]), Number(equationArray[2]), '*');
+        equationValue = '';
+        equationValue = operate(Number(equationArray[0]), Number(equationArray[2]), '*');
+        displayEquation.textContent = equationValue += " / ";
+
+    } else if (equationTrimmed.indexOf('/') !== -1) {
+        
+        displayEquation.textContent = operate(Number(equationArray[0]), Number(equationArray[2]), '/');
+        equationValue = '';
+        equationValue = operate(Number(equationArray[0]), Number(equationArray[2]), '/');
+        displayEquation.textContent = equationValue += " / ";
+
+    } else {
+        equationValue = equationValue += ' / ';
+        displayEquation.textContent = equationValue;
+    }
 
 })
 
@@ -203,16 +322,20 @@ equals.addEventListener('click', () => {
     
     if (equationValueTrimmed.indexOf('+') !== -1) {       
         let equationArray = equationValueTrimmed.split(' ');
-        displayEquation.textContent = operate(Number(equationArray[0]), Number(equationArray[2]), '+');
+        let newValue = operate(Number(equationArray[0]), Number(equationArray[2]), '+');
+        displayEquation.textContent = newValue;
     }else if (equationValueTrimmed.indexOf('-') !== -1) {
         let equationArray = equationValueTrimmed.split(' ');
-        displayEquation.textContent = operate(Number(equationArray[0]), Number(equationArray[2]), '-');
+        let newValue = operate(Number(equationArray[0]), Number(equationArray[2]), '-');
+        displayEquation.textContent = newValue;
     } else if (equationValueTrimmed.indexOf('*') !== -1) {
         let equationArray = equationValueTrimmed.split(' ');
-        displayEquation.textContent = operate(Number(equationArray[0]), Number(equationArray[2]), '*');
+        let newValue = operate(Number(equationArray[0]), Number(equationArray[2]), '*');
+        displayEquation.textContent = newValue;
     } else if (equationValueTrimmed.indexOf('/') !== -1) {
         let equationArray = equationValueTrimmed.split(' ');
-        displayEquation.textContent = operate(Number(equationArray[0]), Number(equationArray[2]), '/');
+        let newValue = operate(Number(equationArray[0]), Number(equationArray[2]), '/');
+        displayEquation.textContent = newValue;
     } else {
         displayEquation.textContent = 'error';
     }
