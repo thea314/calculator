@@ -143,7 +143,23 @@ addition.addEventListener('click', () => {
     equationTrimmed = equationValue.trim();
     let equationArray = equationTrimmed.split(' ');
 
-    if(equationTrimmed.indexOf('+') !== -1) {
+    if (equationTrimmed.endsWith('+')) {
+        equationValue += "";
+    
+    
+    } else if (equationTrimmed.endsWith('-')) {
+        equationValue += "";
+    
+    
+    } else if (equationTrimmed.endsWith('*')) {
+        equationValue += "";
+    
+    
+    }else if (equationTrimmed.endsWith('/')) {
+        equationValue += "";
+    
+    
+    } else if (equationTrimmed.indexOf('+') !== -1) {
               
         displayEquation.textContent = operate(Number(equationArray[0]), Number(equationArray[2]), '+');
         equationValue = '';
@@ -171,7 +187,6 @@ addition.addEventListener('click', () => {
         equationValue = '';
         equationValue = operate(Number(equationArray[0]), Number(equationArray[2]), '/');
         displayEquation.textContent = equationValue += " + ";
-
     } else {
         equationValue = equationValue += ' + ';
         displayEquation.textContent = equationValue;
@@ -184,7 +199,22 @@ minus.addEventListener('click', () => {
     equationTrimmed = equationValue.trim();
     let equationArray = equationTrimmed.split(' ');
 
-    if(equationTrimmed.indexOf('+') !== -1) {
+    if(equationTrimmed.endsWith('+')) {
+        equationValue += "";
+    
+    
+    } else if (equationTrimmed.endsWith('-')) {
+        equationValue += "";
+    
+    
+    } else if (equationTrimmed.endsWith('*')) {
+        equationValue += "";
+    
+    
+    }else if (equationTrimmed.endsWith('/')) {
+        equationValue += "";
+    
+    } else if (equationTrimmed.indexOf('+') !== -1) {
               
         displayEquation.textContent = operate(Number(equationArray[0]), Number(equationArray[2]), '+');
         equationValue = '';
@@ -227,7 +257,22 @@ multiplication.addEventListener('click', () => {
     equationTrimmed = equationValue.trim();
     let equationArray = equationTrimmed.split(' ');
 
-    if(equationTrimmed.indexOf('+') !== -1) {
+    if(equationTrimmed.endsWith('+')) {
+        equationValue += "";
+    
+    
+    } else if (equationTrimmed.endsWith('-')) {
+        equationValue += "";
+    
+    
+    } else if (equationTrimmed.endsWith('*')) {
+        equationValue += "";
+    
+    
+    }else if (equationTrimmed.endsWith('/')) {
+        equationValue += "";
+    
+    } else if (equationTrimmed.indexOf('+') !== -1) {
               
         displayEquation.textContent = operate(Number(equationArray[0]), Number(equationArray[2]), '+');
         equationValue = '';
@@ -270,7 +315,22 @@ division.addEventListener('click', () => {
     equationTrimmed = equationValue.trim();
     let equationArray = equationTrimmed.split(' ');
 
-    if(equationTrimmed.indexOf('+') !== -1) {
+    if(equationTrimmed.endsWith('+')) {
+        equationValue += "";
+    
+    
+    } else if (equationTrimmed.endsWith('-')) {
+        equationValue += "";
+    
+    
+    } else if (equationTrimmed.endsWith('*')) {
+        equationValue += "";
+    
+    
+    }else if (equationTrimmed.endsWith('/')) {
+        equationValue += "";
+    
+    } else if (equationTrimmed.indexOf('+') !== -1) {
               
         displayEquation.textContent = operate(Number(equationArray[0]), Number(equationArray[2]), '+');
         equationValue = '';
