@@ -402,3 +402,11 @@ equals.addEventListener('click', () => {
 
 })
 
+let backspaceDelete = document.getElementById('backspace');
+
+backspaceDelete.addEventListener('click', () => {
+
+    let shorterEquation = equationValue.substring(0, equationValue.length -1);
+    equationValue = shorterEquation;
+    displayEquation.textContent = equationValue;
+})
